@@ -1,0 +1,31 @@
+name: Quick Build
+
+on:
+  push:
+    branches: 
+     - '**'
+  pull_request:
+    branches: 
+     - '**'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+     - uses: actions/checkout@v4
+     
+     - name: Setup MSBuild
+       uses: microsoft/setup-msbuild@v1.3
+     
+     - name: Setup NuGet
+       uses: NuGet/setup-nuget@v1.2.0
+           
+     - name: Restore NuGet packages
+       run: |
+         nuget sources add -name github -source "https://nuget.pkg.github.com/SkylineCommunications/index.json" -username USERNAME -password ${{ secrets.GITHUB_TOKEN }} 
+         nuget restore "HomeWizard P1 Meter.sln"
+     
+     - name: Build Solution
+       run: msbuild "HomeWizard P1 Meter.sln" /p:Configuration=Release -clp:ForceConsoleColor
+  

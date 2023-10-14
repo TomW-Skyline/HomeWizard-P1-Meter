@@ -13,8 +13,146 @@ public static class Parameter
 	public const int httpdata_50 = 50;
 	/// <summary>PID: 50 | Type: read</summary>
 	public const int httpdata = 50;
+	/// <summary>PID: 100 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int uniqueid_100 = 100;
+	/// <summary>PID: 100 | Type: read</summary>
+	public const int uniqueid = 100;
+	/// <summary>PID: 101 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int model_101 = 101;
+	/// <summary>PID: 101 | Type: read</summary>
+	public const int model = 101;
+	/// <summary>PID: 102 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int smrversion_102 = 102;
+	/// <summary>PID: 102 | Type: read</summary>
+	public const int smrversion = 102;
+	/// <summary>PID: 110 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int wifi_ssid_110 = 110;
+	/// <summary>PID: 110 | Type: read</summary>
+	public const int wifi_ssid = 110;
+	/// <summary>PID: 111 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int wifi_strength_111 = 111;
+	/// <summary>PID: 111 | Type: read</summary>
+	public const int wifi_strength = 111;
+	/// <summary>PID: 120 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int activetariff_120 = 120;
+	/// <summary>PID: 120 | Type: read</summary>
+	public const int activetariff = 120;
+	/// <summary>PID: 200 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int activepower_200 = 200;
+	/// <summary>PID: 200 | Type: read</summary>
+	public const int activepower = 200;
+	/// <summary>PID: 201 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int activepoweraverage_201 = 201;
+	/// <summary>PID: 201 | Type: read</summary>
+	public const int activepoweraverage = 201;
+	/// <summary>PID: 205 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int monthlypowerpeak_205 = 205;
+	/// <summary>PID: 205 | Type: read</summary>
+	public const int monthlypowerpeak = 205;
+	/// <summary>PID: 206 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int monthlypowerpeaktime_206 = 206;
+	/// <summary>PID: 206 | Type: read</summary>
+	public const int monthlypowerpeaktime = 206;
+	/// <summary>PID: 210 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int totalpowerimport_210 = 210;
+	/// <summary>PID: 210 | Type: read</summary>
+	public const int totalpowerimport = 210;
+	/// <summary>PID: 211 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int totalpowerimportt1_211 = 211;
+	/// <summary>PID: 211 | Type: read</summary>
+	public const int totalpowerimportt1 = 211;
+	/// <summary>PID: 212 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int totalpowerimportt2_212 = 212;
+	/// <summary>PID: 212 | Type: read</summary>
+	public const int totalpowerimportt2 = 212;
+	/// <summary>PID: 220 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int totalpowerexport_220 = 220;
+	/// <summary>PID: 220 | Type: read</summary>
+	public const int totalpowerexport = 220;
+	/// <summary>PID: 221 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int totalpowerexportt1_221 = 221;
+	/// <summary>PID: 221 | Type: read</summary>
+	public const int totalpowerexportt1 = 221;
+	/// <summary>PID: 222 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public const int totalpowerexportt2_222 = 222;
+	/// <summary>PID: 222 | Type: read</summary>
+	public const int totalpowerexportt2 = 222;
 	public class Write
 	{
+	}
+	public class Phasestable
+	{
+		/// <summary>PID: 1000</summary>
+		public const int tablePid = 1000;
+		/// <summary>IDX: 0</summary>
+		public const int indexColumn = 0;
+		/// <summary>PID: 1001</summary>
+		public const int indexColumnPid = 1001;
+		public class Pid
+		{
+			/// <summary>PID: 1001 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablephase_1001 = 1001;
+			/// <summary>PID: 1001 | Type: read</summary>
+			public const int phasestablephase = 1001;
+			/// <summary>PID: 1002 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablevoltage_1002 = 1002;
+			/// <summary>PID: 1002 | Type: read</summary>
+			public const int phasestablevoltage = 1002;
+			/// <summary>PID: 1003 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablecurrent_1003 = 1003;
+			/// <summary>PID: 1003 | Type: read</summary>
+			public const int phasestablecurrent = 1003;
+			/// <summary>PID: 1004 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablepower_1004 = 1004;
+			/// <summary>PID: 1004 | Type: read</summary>
+			public const int phasestablepower = 1004;
+			public class Write
+			{
+			}
+		}
+		public class Idx
+		{
+			/// <summary>IDX: 0 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablephase_1001 = 0;
+			/// <summary>IDX: 0 | Type: read</summary>
+			public const int phasestablephase = 0;
+			/// <summary>IDX: 1 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablevoltage_1002 = 1;
+			/// <summary>IDX: 1 | Type: read</summary>
+			public const int phasestablevoltage = 1;
+			/// <summary>IDX: 2 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablecurrent_1003 = 2;
+			/// <summary>IDX: 2 | Type: read</summary>
+			public const int phasestablecurrent = 2;
+			/// <summary>IDX: 3 | Type: read</summary>
+			[EditorBrowsable(EditorBrowsableState.Never)]
+			public const int phasestablepower_1004 = 3;
+			/// <summary>IDX: 3 | Type: read</summary>
+			public const int phasestablepower = 3;
+		}
 	}
 }
 public class WriteParameters
@@ -27,13 +165,57 @@ public class WriteParameters
 }
 public interface SLProtocolExt : SLProtocol
 {
+	/// <summary>PID: 1000</summary>
+	PhasestableQActionTable phasestable { get; set; }
 	object Afterstartup_dummy { get; set; }
 	object Httpdata_50 { get; set; }
 	object Httpdata { get; set; }
+	object Uniqueid_100 { get; set; }
+	object Uniqueid { get; set; }
+	object Model_101 { get; set; }
+	object Model { get; set; }
+	object Smrversion_102 { get; set; }
+	object Smrversion { get; set; }
+	object Wifi_ssid_110 { get; set; }
+	object Wifi_ssid { get; set; }
+	object Wifi_strength_111 { get; set; }
+	object Wifi_strength { get; set; }
+	object Activetariff_120 { get; set; }
+	object Activetariff { get; set; }
+	object Activepower_200 { get; set; }
+	object Activepower { get; set; }
+	object Activepoweraverage_201 { get; set; }
+	object Activepoweraverage { get; set; }
+	object Monthlypowerpeak_205 { get; set; }
+	object Monthlypowerpeak { get; set; }
+	object Monthlypowerpeaktime_206 { get; set; }
+	object Monthlypowerpeaktime { get; set; }
+	object Totalpowerimport_210 { get; set; }
+	object Totalpowerimport { get; set; }
+	object Totalpowerimportt1_211 { get; set; }
+	object Totalpowerimportt1 { get; set; }
+	object Totalpowerimportt2_212 { get; set; }
+	object Totalpowerimportt2 { get; set; }
+	object Totalpowerexport_220 { get; set; }
+	object Totalpowerexport { get; set; }
+	object Totalpowerexportt1_221 { get; set; }
+	object Totalpowerexportt1 { get; set; }
+	object Totalpowerexportt2_222 { get; set; }
+	object Totalpowerexportt2 { get; set; }
+	object Phasestablephase_1001 { get; set; }
+	object Phasestablephase { get; set; }
+	object Phasestablevoltage_1002 { get; set; }
+	object Phasestablevoltage { get; set; }
+	object Phasestablecurrent_1003 { get; set; }
+	object Phasestablecurrent { get; set; }
+	object Phasestablepower_1004 { get; set; }
+	object Phasestablepower { get; set; }
 	WriteParameters Write { get; set; }
 }
 public class ConcreteSLProtocolExt : ConcreteSLProtocol, SLProtocolExt
 {
+	/// <summary>PID: 1000</summary>
+	public PhasestableQActionTable phasestable { get; set; }
 	/// <summary>PID: 2  | Type: dummy</summary>
 	public System.Object Afterstartup_dummy {get { return GetParameter(2); }set { SetParameter(2, value); }}
 	/// <summary>PID: 50  | Type: read</summary>
@@ -41,10 +223,146 @@ public class ConcreteSLProtocolExt : ConcreteSLProtocol, SLProtocolExt
 	public System.Object Httpdata_50 {get { return GetParameter(50); }set { SetParameter(50, value); }}
 	/// <summary>PID: 50  | Type: read</summary>
 	public System.Object Httpdata {get { return GetParameter(50); }set { SetParameter(50, value); }}
+	/// <summary>PID: 100  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Uniqueid_100 {get { return GetParameter(100); }set { SetParameter(100, value); }}
+	/// <summary>PID: 100  | Type: read</summary>
+	public System.Object Uniqueid {get { return GetParameter(100); }set { SetParameter(100, value); }}
+	/// <summary>PID: 101  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Model_101 {get { return GetParameter(101); }set { SetParameter(101, value); }}
+	/// <summary>PID: 101  | Type: read</summary>
+	public System.Object Model {get { return GetParameter(101); }set { SetParameter(101, value); }}
+	/// <summary>PID: 102  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Smrversion_102 {get { return GetParameter(102); }set { SetParameter(102, value); }}
+	/// <summary>PID: 102  | Type: read</summary>
+	public System.Object Smrversion {get { return GetParameter(102); }set { SetParameter(102, value); }}
+	/// <summary>PID: 110  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Wifi_ssid_110 {get { return GetParameter(110); }set { SetParameter(110, value); }}
+	/// <summary>PID: 110  | Type: read</summary>
+	public System.Object Wifi_ssid {get { return GetParameter(110); }set { SetParameter(110, value); }}
+	/// <summary>PID: 111  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Wifi_strength_111 {get { return GetParameter(111); }set { SetParameter(111, value); }}
+	/// <summary>PID: 111  | Type: read</summary>
+	public System.Object Wifi_strength {get { return GetParameter(111); }set { SetParameter(111, value); }}
+	/// <summary>PID: 120  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Activetariff_120 {get { return GetParameter(120); }set { SetParameter(120, value); }}
+	/// <summary>PID: 120  | Type: read</summary>
+	public System.Object Activetariff {get { return GetParameter(120); }set { SetParameter(120, value); }}
+	/// <summary>PID: 200  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Activepower_200 {get { return GetParameter(200); }set { SetParameter(200, value); }}
+	/// <summary>PID: 200  | Type: read</summary>
+	public System.Object Activepower {get { return GetParameter(200); }set { SetParameter(200, value); }}
+	/// <summary>PID: 201  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Activepoweraverage_201 {get { return GetParameter(201); }set { SetParameter(201, value); }}
+	/// <summary>PID: 201  | Type: read</summary>
+	public System.Object Activepoweraverage {get { return GetParameter(201); }set { SetParameter(201, value); }}
+	/// <summary>PID: 205  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Monthlypowerpeak_205 {get { return GetParameter(205); }set { SetParameter(205, value); }}
+	/// <summary>PID: 205  | Type: read</summary>
+	public System.Object Monthlypowerpeak {get { return GetParameter(205); }set { SetParameter(205, value); }}
+	/// <summary>PID: 206  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Monthlypowerpeaktime_206 {get { return GetParameter(206); }set { SetParameter(206, value); }}
+	/// <summary>PID: 206  | Type: read</summary>
+	public System.Object Monthlypowerpeaktime {get { return GetParameter(206); }set { SetParameter(206, value); }}
+	/// <summary>PID: 210  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Totalpowerimport_210 {get { return GetParameter(210); }set { SetParameter(210, value); }}
+	/// <summary>PID: 210  | Type: read</summary>
+	public System.Object Totalpowerimport {get { return GetParameter(210); }set { SetParameter(210, value); }}
+	/// <summary>PID: 211  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Totalpowerimportt1_211 {get { return GetParameter(211); }set { SetParameter(211, value); }}
+	/// <summary>PID: 211  | Type: read</summary>
+	public System.Object Totalpowerimportt1 {get { return GetParameter(211); }set { SetParameter(211, value); }}
+	/// <summary>PID: 212  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Totalpowerimportt2_212 {get { return GetParameter(212); }set { SetParameter(212, value); }}
+	/// <summary>PID: 212  | Type: read</summary>
+	public System.Object Totalpowerimportt2 {get { return GetParameter(212); }set { SetParameter(212, value); }}
+	/// <summary>PID: 220  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Totalpowerexport_220 {get { return GetParameter(220); }set { SetParameter(220, value); }}
+	/// <summary>PID: 220  | Type: read</summary>
+	public System.Object Totalpowerexport {get { return GetParameter(220); }set { SetParameter(220, value); }}
+	/// <summary>PID: 221  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Totalpowerexportt1_221 {get { return GetParameter(221); }set { SetParameter(221, value); }}
+	/// <summary>PID: 221  | Type: read</summary>
+	public System.Object Totalpowerexportt1 {get { return GetParameter(221); }set { SetParameter(221, value); }}
+	/// <summary>PID: 222  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Totalpowerexportt2_222 {get { return GetParameter(222); }set { SetParameter(222, value); }}
+	/// <summary>PID: 222  | Type: read</summary>
+	public System.Object Totalpowerexportt2 {get { return GetParameter(222); }set { SetParameter(222, value); }}
+	/// <summary>PID: 1001  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablephase_1001 {get { return GetParameter(1001); }set { SetParameter(1001, value); }}
+	/// <summary>PID: 1001  | Type: read</summary>
+	public System.Object Phasestablephase {get { return GetParameter(1001); }set { SetParameter(1001, value); }}
+	/// <summary>PID: 1002  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablevoltage_1002 {get { return GetParameter(1002); }set { SetParameter(1002, value); }}
+	/// <summary>PID: 1002  | Type: read</summary>
+	public System.Object Phasestablevoltage {get { return GetParameter(1002); }set { SetParameter(1002, value); }}
+	/// <summary>PID: 1003  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablecurrent_1003 {get { return GetParameter(1003); }set { SetParameter(1003, value); }}
+	/// <summary>PID: 1003  | Type: read</summary>
+	public System.Object Phasestablecurrent {get { return GetParameter(1003); }set { SetParameter(1003, value); }}
+	/// <summary>PID: 1004  | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablepower_1004 {get { return GetParameter(1004); }set { SetParameter(1004, value); }}
+	/// <summary>PID: 1004  | Type: read</summary>
+	public System.Object Phasestablepower {get { return GetParameter(1004); }set { SetParameter(1004, value); }}
 	public WriteParameters Write { get; set; }
 	public ConcreteSLProtocolExt()
 	{
+		phasestable = new PhasestableQActionTable(this, 1000, "phasestable");
 		Write = new WriteParameters(this);
 	}
+}
+/// <summary>IDX: 0</summary>
+public class PhasestableQActionTable : QActionTable, IEnumerable<PhasestableQActionRow>
+{
+	public PhasestableQActionTable(SLProtocol protocol, int tableId, string tableName) : base(protocol, tableId, tableName) { }
+	IEnumerator IEnumerable.GetEnumerator() { return (IEnumerator) GetEnumerator(); }
+	public IEnumerator<PhasestableQActionRow> GetEnumerator() { return new QActionTableEnumerator<PhasestableQActionRow>(this); }
+}
+/// <summary>IDX: 0</summary>
+public class PhasestableQActionRow : QActionTableRow
+{
+	/// <summary>PID: 1001 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablephase_1001 { get { if (base.Columns.ContainsKey(0)) { return base.Columns[0]; } else { return null; } } set { if (base.Columns.ContainsKey(0)) { base.Columns[0] = value; } else { base.Columns.Add(0, value); } } }
+	/// <summary>PID: 1001 | Type: read</summary>
+	public System.Object Phasestablephase { get { if (base.Columns.ContainsKey(0)) { return base.Columns[0]; } else { return null; } } set { if (base.Columns.ContainsKey(0)) { base.Columns[0] = value; } else { base.Columns.Add(0, value); } } }
+	/// <summary>PID: 1002 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablevoltage_1002 { get { if (base.Columns.ContainsKey(1)) { return base.Columns[1]; } else { return null; } } set { if (base.Columns.ContainsKey(1)) { base.Columns[1] = value; } else { base.Columns.Add(1, value); } } }
+	/// <summary>PID: 1002 | Type: read</summary>
+	public System.Object Phasestablevoltage { get { if (base.Columns.ContainsKey(1)) { return base.Columns[1]; } else { return null; } } set { if (base.Columns.ContainsKey(1)) { base.Columns[1] = value; } else { base.Columns.Add(1, value); } } }
+	/// <summary>PID: 1003 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablecurrent_1003 { get { if (base.Columns.ContainsKey(2)) { return base.Columns[2]; } else { return null; } } set { if (base.Columns.ContainsKey(2)) { base.Columns[2] = value; } else { base.Columns.Add(2, value); } } }
+	/// <summary>PID: 1003 | Type: read</summary>
+	public System.Object Phasestablecurrent { get { if (base.Columns.ContainsKey(2)) { return base.Columns[2]; } else { return null; } } set { if (base.Columns.ContainsKey(2)) { base.Columns[2] = value; } else { base.Columns.Add(2, value); } } }
+	/// <summary>PID: 1004 | Type: read</summary>
+	[EditorBrowsable(EditorBrowsableState.Never)]
+	public System.Object Phasestablepower_1004 { get { if (base.Columns.ContainsKey(3)) { return base.Columns[3]; } else { return null; } } set { if (base.Columns.ContainsKey(3)) { base.Columns[3] = value; } else { base.Columns.Add(3, value); } } }
+	/// <summary>PID: 1004 | Type: read</summary>
+	public System.Object Phasestablepower { get { if (base.Columns.ContainsKey(3)) { return base.Columns[3]; } else { return null; } } set { if (base.Columns.ContainsKey(3)) { base.Columns[3] = value; } else { base.Columns.Add(3, value); } } }
+	public PhasestableQActionRow() : base(0, 4) { }
+	public PhasestableQActionRow(System.Object[] oRow) : base(0, 4, oRow) { }
+	public static implicit operator PhasestableQActionRow(System.Object[] source) { return new PhasestableQActionRow(source); }
+	public static implicit operator System.Object[](PhasestableQActionRow source) { return source.ToObjectArray(); }
 }
 }
